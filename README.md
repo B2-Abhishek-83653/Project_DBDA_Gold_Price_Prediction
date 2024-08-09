@@ -1,6 +1,6 @@
 # Gold Price Prediction
 
-By Jadhav Abhishek and Harshit Gupta</br>
+By Jadhav Abhishek and Harshit Gupta<br>
 
 ![logo](./data/logo.png)
 
@@ -53,12 +53,43 @@ By Jadhav Abhishek and Harshit Gupta</br>
     ```
     >Once you login to guest vm install softwares
     >```bash
-    >sudo apt install vim net-tools openjdk-8-jdk git
+    >sudo apt install vim net-tools openjdk-8-jdk git wget
     >exit
     >```
     >Repeat for other guest vms
 
-- 
+- Download hadoop and send it to all guest vms
+    ```bash
+    wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz
+    scp /home/a/Downloads/hadoop-3.3.2.tar.gz 192.168.122.100:~/
+    ```
+- On all guest vms
+    ```bash
+    tar xvf hadoop-3.3.2.tar.gz
+    ```
+- On all guest vms
+    ```bash
+    sudo vim /etc/hosts
+    ```
+    >In /etc/hosts add these line on all guest vms
+    > Here a0,a1,a2,a3 are hostname and remaining are ip addresses
+    >```bash
+    > 192.168.122.100 a0
+    > 192.168.122.101 a1
+    > 192.168.122.102 a2
+    > 192.168.122.103 a3
+    >```
+
+- On Primary name node, generate ssh id and copy to all nodes.
+    ```bash
+    ssh-keygen -t rsa -P ""
+    ssh-copy-id hduser@a0
+    ssh-copy-id hduser@a1
+    ssh-copy-id hduser@a2
+    ssh-copy-id hduser@a3
+    ```
+
+
 
 
 

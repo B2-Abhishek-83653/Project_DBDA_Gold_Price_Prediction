@@ -115,3 +115,16 @@
     source ~/.bashrc
     ```
     >Repeat for all guest vms
+
+
+- On master
+    ```bash
+    stop-yarn.sh
+    stop-dfs.sh
+    ```
+- Manually move csv to hdfs
+    ```bash
+    hadoop fs -mkdir -p /user/$USER/emp/input
+
+    hadoop fs -put /home/a/gold_rate.csv /user/$USER/emp/input
+    ```

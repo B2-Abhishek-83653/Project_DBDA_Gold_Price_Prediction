@@ -1,8 +1,11 @@
 # Gold Price Prediction
 
-By Jadhav Abhishek and Harshit Gupta<br>
 
-![logo](./data/logo.png)
+<p align='center'>
+By Jadhav Abhishek and Harshit Gupta<br><br>
+<img src="./data/logo.png">
+</p>
+
 
 ---
 
@@ -13,6 +16,10 @@ By Jadhav Abhishek and Harshit Gupta<br>
 # 2. Setting up Hadoop
 - [Go to Hadoop_setup.md to setup hadoop](./Hadoop_setup.md)
 
+# 3. Model building
+
+# 4. UI building
+- [Go to UI_building.md to setup hadoop](./UI_building.md)
 
 
 

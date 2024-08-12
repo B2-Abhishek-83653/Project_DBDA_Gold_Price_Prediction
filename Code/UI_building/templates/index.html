@@ -7,32 +7,59 @@
     <title>Gold Price Prediction</title>
 
 	<body>
-        <form class="grid" action="/button" method="POST">
+<h1>	<p align='center'>Gold Price Prediction</p></h1>
+      <p align='center'>
+          <img src="static/images/logo.png"><br><br>
+      By Jadhav Abhishek and Harshit Gupta<br>
+      </p>
+  
+      
 
+
+        <div>
+          <form action="/result" method="POST">
+          <p align='center'>
+            <label for="date">Enter date in format "YYYY-MM-DD" or "YYYYMMDD" or "YYMMDD"</label>
+            <input type="text" id="date" name="date">
+            </p>
+            <p align='center'>
+            <input type="submit" value="Submit">
+            </p>
+          </form>
+        </div>
+        <br>
         
-           
-            <label for="my_button">Button test</label>
-            <input type="text" id="name" name="my_button">
-  
-              
-            {% if my_button %}
-              <center>
-                <h3 style="color: #00FF00;" class="let_space">Entered Date is {{my_button}}</h3>
-              </center> 
-  
-            {% endif %}
-  
-  
-            <center><input class="file_submit" type="Submit"></center>
-  
-  
+        <a href="https://public.tableau.com/app/profile/abhishek.jadhav7961/viz/Project_17231602716620/Dashboard1">To data Visualisation</a>
+        <!-- <a href="./result.html">To result</a>  -->
+
+
+
+<!-- <form class="grid" action="/button" method="POST">
+
+      
+          
+          <label for="my_button">Button test</label>
+          <input type="text" id="name" name="my_button">
+
             
-        </form>
+          {% if my_button %}
+            <center>
+              <h3 style="color: #00FF00;" class="let_space">Entered Date is {{my_button}}</h3>
+            </center> 
+
+          {% endif %}
+
+
+          <center><input class="file_submit" type="Submit"></center>
+
+
+      </form> -->
 
           
 
 
-        <form class="grid" action="/result" method="POST">
+
+        <!-- <form class="grid" action="/result" method="POST">
 
         
            
@@ -52,8 +79,10 @@
 
 
           
-        </form>
+        </form> -->
 
+
+        
         <br>
         <br>
         <br>

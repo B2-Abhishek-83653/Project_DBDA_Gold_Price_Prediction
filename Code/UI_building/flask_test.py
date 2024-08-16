@@ -26,7 +26,7 @@ def ValuePredictor(to_predict_list):
 	#to_predict = np.array(to_predict_list).reshape(1, 12)
     to_predict = np.array(to_predict_list).reshape(1, -1)
     #loaded_model = pickle.load(open("./pr_model.pkl", "rb"))
-    loaded_model = joblib.load('static/models/svr_model.pkl') 
+    loaded_model = joblib.load('static/models/xgb_model.pkl') 
     result = loaded_model.predict(to_predict)
     
     # # get the predicted data

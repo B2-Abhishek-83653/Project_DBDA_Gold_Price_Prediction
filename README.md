@@ -6,7 +6,11 @@ By Jadhav Abhishek and Harshit Gupta<br><br>
 <img src="./data/logo.png">
 </p>
 
+Our GitHub Links:
 
+https://github.com/B2-Abhishek-83653/Project_DBDA_Gold_Price_Prediction
+
+https://github.com/B2-Harshit-83943/GOLD_PRICE_PREDICTION
 ---
 
 # 1. Setting up Guest VMs
